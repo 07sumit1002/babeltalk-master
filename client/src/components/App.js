@@ -22,7 +22,8 @@ class App extends Component {
       username: null
     };
 
-    this.socket = io(process.env.REACT_APP_SOCKET_SERVER);
+    // this.socket = io(process.env.REACT_APP_SOCKET_SERVER);
+    this.socket = io('http://localhost:3000');
   }
 
   render() {
